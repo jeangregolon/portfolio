@@ -1,9 +1,16 @@
 import "./App.css";
+import { ServicesSection } from "./components/servicesSection";
+import { Footer } from "./components/footer";
+import { MainSection } from "./components/mainSection";
+import { SkillsSection } from "./components/skillsSection";
 
 export const App = () => {
   return (
     <div className="App">
-      <h1>Olá</h1>
+      <MainSection />
+      <SkillsSection />
+      <ServicesSection />
+      <Footer />
     </div>
   );
 };
