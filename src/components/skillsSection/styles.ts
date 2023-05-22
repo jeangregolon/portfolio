@@ -29,6 +29,10 @@ export const Container = styled.div`
   overflow-x: hidden;
   max-width: 1366px;
   margin: 0 auto;
+
+  @media (max-width: 719px) {
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -40,6 +44,10 @@ export const Subtitle = styled.p`
   font-size: 18px;
   margin: 12px 0 24px;
   max-width: 50%;
+
+  @media (max-width: 1023px) {
+    max-width: 100%;
+  }
 `;
 
 export const CardsWrapper = styled.div<SlideProps>`

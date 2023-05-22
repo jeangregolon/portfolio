@@ -11,16 +11,30 @@ export const Container = styled.div`
   padding: 60px;
   background: ${darkBlue};
   color: ${white};
+
+  @media (max-width: 719px) {
+    padding: 20px;
+  }
 `;
 
 export const ColumnWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 54px;
+
+  @media (max-width: 1023px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 `;
 
 export const LeftColumn = styled.div`
@@ -28,16 +42,29 @@ export const LeftColumn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 719px) {
+    width: 100%;
+  }
 `;
 
 export const Divider = styled.div`
-  // height: 99%;
   width: 1px;
   background-color: ${lightBlue};
+
+  @media (max-width: 1023px) {
+    width: 90%;
+    height: 1px;
+    margin: 30px 0;
+  }
 `;
 
 export const RightColumn = styled.div`
   width: 50%;
+
+  @media (max-width: 719px) {
+    width: 100%;
+  }
 `;
 
 export const Form = styled.form`
@@ -84,6 +111,13 @@ export const Button = styled.button`
 
 export const SocialWrapper = styled.div`
   max-width: 270px;
+
+  @media (max-width: 719px) {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 export const SocialLink = styled.a``;

@@ -22,6 +22,10 @@ export const Container = styled.div`
   background-color: ${darkBlue};
   height: 100%;
   padding: 20px 60px;
+
+  @media (max-width: 719px) {
+    padding: 20px;
+  }
 `;
 
 export const Oportunities = styled.div`
@@ -33,6 +37,10 @@ export const Oportunities = styled.div`
   height: 400px;
   max-width: 1366px;
   margin: 0 auto;
+
+  @media (max-width: 719px) {
+    height: 300px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -41,6 +49,11 @@ export const Title = styled.h2`
   max-width: 650px;
   font-weight: 900;
   margin-left: 50px;
+
+  @media (max-width: 719px) {
+    margin-left: 0;
+    font-size: 50px;
+  }
 `;
 
 export const TypingEffect = styled.span`
@@ -77,6 +90,10 @@ export const MainAsset = styled.div`
   z-index: 9;
   bottom: -20px;
   right: 50px;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 export const Button = styled.button`
@@ -108,5 +125,9 @@ export const Button = styled.button`
     height: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 719px) {
+    margin: 40px 0 0 0;
   }
 `;

@@ -15,16 +15,29 @@ export const Wrapper = styled.div`
   max-width: 1366px;
   background: rgba(0, 0, 0, 0.5);
   color: ${white};
+
+  @media (max-width: 719px) {
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 54px;
   margin: 0 0 40px 50%;
+
+  @media (max-width: 1023px) {
+    margin: 0 0 40px 0;
+  }
 `;
 
 export const List = styled.ul`
   width: 50%;
   margin-left: 50%;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 
 export const ListItem = styled.li`

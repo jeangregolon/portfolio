@@ -12,6 +12,10 @@ export const Container = styled.div`
   justify-content: space-between;
   max-width: 1366px;
   margin: 0 auto;
+
+  @media (max-width: 719px) {
+    justify-content: center;
+  }
 `;
 
 export const Logo = styled.img`
@@ -24,6 +28,10 @@ export const Menu = styled.ul`
   justify-content: space-between;
   align-items: center;
   margin: 0;
+
+  @media (max-width: 719px) {
+    display: none;
+  }
 `;
 
 export const MenuItem = styled.li`
