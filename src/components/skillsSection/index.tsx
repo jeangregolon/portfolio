@@ -130,10 +130,12 @@ export const SkillsSection = () => {
             </CardsWrapper>
             <CardsWrapper slideDirection={row % 2 === 0 ? "slide" : "reverse"}>
               {shuffledSkills.map((skill) => (
-                <Card>
-                  <Icon asset={`/assets/${skill.logo}.png`} />
-                  <Name>{skill.name}</Name>
-                </Card>
+                <Link href={skill.link} target="_blank">
+                  <Card>
+                    <Icon asset={`/assets/${skill.logo}.png`} />
+                    <Name>{skill.name}</Name>
+                  </Card>
+                </Link>
               ))}
             </CardsWrapper>
           </CardRow>
