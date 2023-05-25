@@ -98,6 +98,11 @@ export const Card = styled.div`
   box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
 `;
 
+export const Link = styled.a`
+  cursor: pointer;
+  color: black;
+`;
+
 export const Icon = styled.div<IconProps>`
   background: url("${(props) => props.asset}") transparent no-repeat;
   background-size: cover;
