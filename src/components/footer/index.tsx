@@ -21,7 +21,7 @@ const socialIcons = [
   {
     src: "e-mail",
     alt: "E-mail",
-    href: "mailto:contato@gregolontech.com.br",
+    href: "mailto:jean.gregolon@gmail.com",
   },
   {
     src: "github",
@@ -58,7 +58,7 @@ export const Footer = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    const mailto = "mailto:contato@gregolontech.com.br";
+    const mailto = "mailto:jean.gregolon@gmail.com";
     const body = `Nome: ${name}%0D%0AEmail: ${email}%0D%0AMensagem: ${message}`;
     window.location.href = `${mailto}?subject=Contato&body=${body}`;
   };
