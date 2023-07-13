@@ -24,9 +24,9 @@ export const Header = () => {
           <MenuItem onClick={() => handleMenuItemClick("serviços")}>
             Serviços
           </MenuItem>
-          {/* <MenuItem onClick={() => handleMenuItemClick("projetos")}>
+          <MenuItem onClick={() => handleMenuItemClick("projetos")}>
             Projetos
-          </MenuItem> */}
+          </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("contato")}>
             Contato
           </MenuItem>
